@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DECORA | Luxury Balloon Artistry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#4f5161",
+                    "on-error": "#ffefee",
+                    "on-tertiary-fixed": "#4f4f2e",
+                    "tertiary-container": "#fefccf",
+                    "error": "#b31b25",
+                    "tertiary-fixed": "#fefccf",
+                    "primary": "#894853",
+                    "secondary": "#595a6b",
+                    "surface-container-high": "#e4e2de",
+                    "secondary-fixed-dim": "#d3d3e6",
+                    "on-tertiary": "#f7f5c8",
+                    "primary-fixed-dim": "#ee9da8",
+                    "on-primary": "#ffeff0",
+                    "surface-bright": "#f8f6f2",
+                    "surface-container-highest": "#deddd8",
+                    "outline": "#777774",
+                    "on-primary-container": "#642a34",
+                    "inverse-primary": "#feaab6",
+                    "tertiary-fixed-dim": "#efedc1",
+                    "on-tertiary-container": "#61613e",
+                    "on-secondary": "#f3f1ff",
+                    "error-container": "#fb5151",
+                    "surface": "#f8f6f2",
+                    "on-primary-fixed": "#491520",
+                    "surface-variant": "#deddd8",
+                    "surface-tint": "#894853",
+                    "on-secondary-fixed-variant": "#595a6b",
+                    "primary-dim": "#7b3c47",
+                    "on-surface-variant": "#5b5c59",
+                    "on-primary-fixed-variant": "#6e323d",
+                    "on-tertiary-fixed-variant": "#6c6b48",
+                    "secondary-dim": "#4d4f5f",
+                    "on-error-container": "#570008",
+                    "on-surface": "#2e2f2d",
+                    "surface-container-low": "#f2f1ec",
+                    "error-dim": "#9f0519",
+                    "secondary-fixed": "#e1e1f5",
+                    "inverse-on-surface": "#9e9d99",
+                    "surface-container": "#e9e8e4",
+                    "background": "#f8f6f2",
+                    "tertiary": "#5d5d3b",
+                    "surface-dim": "#d5d4d0",
+                    "primary-container": "#feaab6",
+                    "on-background": "#2e2f2d",
+                    "primary-fixed": "#feaab6",
+                    "on-secondary-fixed": "#3d3e4e",
+                    "secondary-container": "#e1e1f5",
+                    "outline-variant": "#aeadaa",
+                    "tertiary-dim": "#515130",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#0e0e0d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Noto Serif', serif; }
+        .glass-nav {
+            background: rgba(248, 246, 242, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .editorial-shadow {
+            box-shadow: 0px 20px 40px rgba(46, 47, 45, 0.06);
+        }
+        .floating-bubble {
+            filter: blur(60px);
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        
+        /* Functional Accordion */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+        }
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-full">
+<div class="text-2xl font-serif italic text-rose-900 dark:text-rose-100" style="">DECORA</div>
+<div class="hidden md:flex items-center space-gap-8 gap-8"><a class="text-rose-900 dark:text-rose-100 font-bold border-b-2 border-rose-800 hover:scale-105 transition-transform duration-300" href="#">Nosotros</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:scale-105 transition-transform duration-300 hover:text-rose-700" href="#">Servicios</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:scale-105 transition-transform duration-300 hover:text-rose-700" href="#">Eventos</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:scale-105 transition-transform duration-300 hover:text-rose-700" href="#">Galería</a></div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform duration-300 shadow-lg" style="">Cotizar</button>
+</div>
+</nav>
+<main class="pt-20 overflow-hidden">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-8 md:px-20 py-24">
+<div class="absolute top-20 right-[-10%] w-[60%] h-[80%] rounded-xl z-0 overflow-hidden">
+<img alt="Luxurious organic balloon installation with soft pastel colors, gold accents, and floral elements cascading over a modern white architectural structure" class="w-full h-full object-cover grayscale-[0.2] contrast-[1.1]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVBCYqy9utgS_pfNZAj6Kl2xN7cxaw_TAtMN8NyqVne7MY0ZOVN0b7FUK4a4W1h4LTtrBYAhO2vy_CNio2uqR6wKpZeFUNUP9aGH_rGxvQDJEJkxBS09j0xKaLkxninOYv5quOumuW3vyVs7ijD76TZwOdKB5VXrnREnyPB9C7tgy1hp09f58Ng1T-ElbRK7DJjxxP8T26T9a61bN7SQKDbx3F8j3tCHoQFwe2fAdtya7J9ejVazw10KR2yRUygc0Xhl1DPqz5ZSE" style=""/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
+</div>
+<div class="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-container rounded-full floating-bubble"></div>
+<div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary-container rounded-full floating-bubble"></div>
+<div class="relative z-10 max-w-2xl">
+<span class="inline-block label-md uppercase tracking-[0.2em] text-primary font-bold mb-6" style="">Arte en cada detalle</span>
+<h1 class="text-5xl md:text-7xl font-serif text-on-surface leading-[1.1] tracking-tight mb-8" style="">
+                    Transformamos tus <span class="italic text-primary" style="">Sueños</span> en Realidad
+                </h1>
+<p class="text-xl text-on-surface-variant font-body mb-10 max-w-lg leading-relaxed" style="">
+                    Decoraciones exclusivas con globos para eventos inolvidables. Diseños etéreos que elevan la atmósfera de tu celebración.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-bold text-lg hover:scale-102 transition-all duration-200 editorial-shadow" style="">
+                        Solicita tu Cotización
+                    </button>
+<button class="bg-transparent border border-outline-variant/30 text-primary px-10 py-5 rounded-full font-bold text-lg hover:scale-102 transition-all" style="">
+                        Explorar Galería
+                    </button>
+</div>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-32 px-8 md:px-20 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<span class="inline-block label-md uppercase tracking-widest text-primary font-bold mb-6" style="">Fundadora</span>
+<h2 class="text-4xl md:text-5xl font-serif text-on-surface mb-8" style="">Hola, soy <span class="italic" style="">Tann Arroyo</span></h2>
+<div class="space-y-6 text-lg text-on-surface-variant font-body leading-relaxed">
+<p class="" style="">Fundé DECORA con una misión simple: inyectar magia y estilo en cada rincón de tus eventos. Con más de 5 años de experiencia en decoración de eventos sociales, infantiles, empresariales, propuestas de matrimonio y bodas.</p>
+<p class="" style="">Ofreciendo spots creativos y elegantes a precio accesible, personalizados de acuerdo a los gustos, ideas y preferencias del usuario.</p>
+</div>
+<div class="mt-10">
+</div>
+</div>
+<div class="order-1 md:order-2 relative">
+<div class="absolute -top-10 -right-10 w-full h-full border-2 border-primary-container rounded-xl z-0"></div>
+<div class="relative z-10 rounded-xl overflow-hidden editorial-shadow aspect-[4/5]">
+<img alt="Tann Arroyo, professional event decorator in a stylish studio with soft pastel balloon arrangements" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9OjNcz7WKfuMFQQRpRqL_xHQ3Hoa-sryNzr6L7AyFWE7TI4RzItLyMWO_lt4JXQ1gsjBKK7REVuCL9546VB0hLJ_AJXXyMDFuPkIRmDHhkw1XrAlxSh7bFiUmHTt2XvoSvYGciY3sLbsZyb494M78vnFDa0e-JB_tIugsRqJ0qP6paepoFobFlPoULpJglY8V1JYTalwY54E3PF7jWBBvn8wpNyRYEEXJMMDG2p_hrylaOiV8IvOegt1IHdA-MYBtYxjNEhOU0Qk" style=""/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-primary text-on-primary px-8 py-4 rounded-lg z-20 hidden md:block">
+<p class="font-serif italic text-2xl" style="">5+ Años Creando Magia</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 px-8 md:px-20 bg-surface-container-low relative">
+<div class="text-center mb-20">
+<span class="label-md uppercase tracking-widest text-primary font-bold" style="">Nuestra Especialidad</span>
+<h2 class="text-4xl md:text-5xl font-serif mt-4 text-on-surface" style="">Experiencias a Medida</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface p-12 rounded-xl editorial-shadow hover:scale-102 transition-all duration-300 group">
+<div class="mb-8 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-5xl" style='font-variation-settings: "FILL" 0;'>celebration</span>
+</div>
+<h3 class="text-2xl font-serif mb-4" style="">Decoración con globos</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">Instalaciones profesionales y arcos orgánicos que transforman cualquier espacio en un escenario de sueño.</p>
+</div>
+<div class="bg-surface p-12 rounded-xl editorial-shadow hover:scale-102 transition-all duration-300 group md:mt-16">
+<div class="mb-8 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-5xl" style='font-variation-settings: "FILL" 0;'>bubble_chart</span>
+</div>
+<h3 class="text-2xl font-serif mb-4" style="">Globos burbuja personalizados</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">Globos cristalinos personalizados con confeti, plumas o mensajes únicos para un detalle delicado e inolvidable.</p>
+</div>
+<div class="bg-surface p-12 rounded-xl editorial-shadow hover:scale-102 transition-all duration-300 group">
+<div class="mb-8 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-5xl" style='font-variation-settings: "FILL" 0;'>auto_awesome</span>
+</div>
+<h3 class="text-2xl font-serif mb-4" style="">Sets decorativos temáticos</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">Montajes completos que incluyen backdrops, mobiliario y decoración coordinada para crear experiencias inmersivas.</p>
+</div>
+</div>
+</section>
+<!-- Portfolio Gallery -->
+<section class="py-32 px-8 md:px-20 bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
+<div class="max-w-xl">
+<h2 class="font-serif leading-tight text-on-surface text-4xl md:text-6xl whitespace-nowrap" style="">Momentos Decora</h2>
+<p class="text-lg text-on-surface-variant mt-4" style="">Un vistaso a nuestras creaciones más recientes</p>
+</div>
+<a class="label-md uppercase tracking-widest text-primary font-bold border-b-2 border-primary pb-1 mb-2 hover:opacity-70 transition-opacity" href="#" style="">Ver Todo el Portfolio</a>
+</div>
+<div class="grid grid-cols-12 gap-8 items-stretch">
+<!-- Large vertical image on the left -->
+<div class="col-span-12 md:col-span-7 relative group rounded-[3rem] overflow-hidden shadow-2xl">
+<img alt="Grand entrance with a massive champagne-colored balloon arch" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 min-h-[600px] md:min-h-[800px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIZtU7iJwDeCl-_nV_ggswBLo9s2O5Mle21hkx2AL0b84JO4uPFC_maAJ4RN4hQnx0IKiGeFkuFpNT3Q1xyH7RrJeCYsEbGj0FA6JK9gxnAIAwVg2Zlamsa4ks5AxRYDFpcrOyK0J2Rsl213eRhyX4be9uSbqNM5OH_L1vzKqFWW4zkJ_YvnzUlPp7zkdhiLyP52DzWf1UVWU8bdsxI3XN4N4FJASebOVE2nAHHUzlypZt0p0t4na-SaW2O4erTcC4vFBbEtIshWg" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-12 left-12 text-white">
+<p class="label-md uppercase tracking-widest opacity-80 mb-2" style="">Gala Anual</p>
+<h4 class="text-4xl font-serif" style="">Nube de Champán</h4>
+</div>
+</div>
+<!-- Two smaller images stacked on the right -->
+<div class="col-span-12 md:col-span-5 flex flex-col gap-8">
+<div class="flex-1 relative group rounded-[3rem] overflow-hidden shadow-xl">
+<img alt="Garden party balloons with flowers" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 min-h-[300px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIDc4tbp9ljzrFthIV4nlkE4z8E4sSq7GEGjsuSSNFU4ofB39XFWzu_M25RMGLnc4fNW7Pi3pdgUMnbGpJ7RUEwu4ZAWdffQfKi5hbnB4zDVj5-hiOr7IzF09AyolUYyBupZPjKujoEnZf0z_hCpQrPz34c7F4PpauGztyAEI6CHKCwbSJDDlAOToxORGa3p62VPwML4U_Hxf04jsx3Q5WopPYV84YgRvae8ERHhrxiYM-q9NEO4Knzy29OmX_D9yS1gc1w-YlCJQ" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<h4 class="text-2xl font-serif" style="">Jardín Encantado</h4>
+</div>
+</div>
+<div class="flex-1 relative group rounded-[3rem] overflow-hidden shadow-xl">
+<img alt="Modern geometric balloon backdrop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 min-h-[300px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjimOAevOhg9VS43zlRRW8RyrVcaUsC13oTxfQ0vOLJ1HBGy-sYy78iKliPtelo8D4BUZ7hbvD2-0ALDu9XmKT6wsHolJ_JjjRTTd_pOwbHCU9x2ldAjZY5O0D4iWmt70yOR758JApzliJLOBUWzwH9gf4_Cvd7q55_Fr6vR6pcgI6pdaxMDcb0AmQSXa-GHDXRb5MpdHY5J528yoIh87quiPWJqOqLlAyZHpP8KMfS3dof0tty1daxJxG7a9eVMpZSwGwXgwaro8" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<h4 class="text-2xl font-serif" style="">Estructura Moderna</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-32 bg-surface-container relative">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary-container/10 floating-bubble"></div>
+<div class="max-w-4xl mx-auto px-8 text-center relative z-10">
+<span class="material-symbols-outlined text-primary text-6xl mb-10 block" style='font-variation-settings: "FILL" 1;'>format_quote</span>
+<div class="space-y-12">
+<div class="testimonial-item">
+<p class="text-3xl md:text-4xl font-serif leading-relaxed text-on-surface" style="">
+                            "La atención al detalle de DECORA es simplemente inigualable. Lograron capturar exactamente la esencia de nuestra marca con una elegancia que dejó a todos sin palabras."
+                        </p>
+<div class="mt-8">
+<p class="font-bold uppercase tracking-widest text-primary" style="">Valentina Rossi</p>
+<p class="text-on-surface-variant text-sm mt-1" style="">Creative Director, L'Art Studio</p>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-4 mt-16">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" style="">
+<span class="material-symbols-outlined" style="">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" style="">
+<span class="material-symbols-outlined" style="">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-32 px-8 md:px-20 bg-surface">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-16">
+<span class="label-md uppercase tracking-widest text-primary font-bold" style="">Ayuda</span>
+<h2 class="text-4xl md:text-5xl font-serif mt-4 text-on-surface" style="">Preguntas Frecuentes</h2>
+</div>
+<div class="space-y-4">
+<div class="accordion-item border-b border-outline-variant/30">
+<button class="flex justify-between items-center w-full py-6 text-left group" onclick="this.parentElement.classList.toggle('active')" style="">
+<span class="text-xl font-serif text-on-surface group-hover:text-primary transition-colors" style="">¿Qué precio tiene una decoración?</span>
+<span class="material-symbols-outlined accordion-icon transition-transform duration-300 text-primary" style="">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="pb-8 text-on-surface-variant leading-relaxed">
+<p class="mb-4" style="">El costo varía según el tamaño y diseño, ya que ofrecemos atención 100% personalizada.</p>
+<div class="flex gap-3 bg-surface-container-low p-4 rounded-lg italic">
+<span class="material-symbols-outlined text-primary text-xl" style="">star</span>
+<p class="" style=""><span class="font-bold text-primary not-italic" style="">Punto clave:</span> Nos adaptamos a tu presupuesto y temática para crear un spot increíble sin que tengas que gastar de más.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item border-b border-outline-variant/30">
+<button class="flex justify-between items-center w-full py-6 text-left group" onclick="this.parentElement.classList.toggle('active')" style="">
+<span class="text-xl font-serif text-on-surface group-hover:text-primary transition-colors" style="">¿Con cuánto tiempo debo agendar?</span>
+<span class="material-symbols-outlined accordion-icon transition-transform duration-300 text-primary" style="">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="pb-8 text-on-surface-variant leading-relaxed">
+<p class="mb-4" style="">Recomendamos agendar con un mínimo de 20 días de anticipación.</p>
+<div class="flex gap-3 bg-surface-container-low p-4 rounded-lg italic">
+<span class="material-symbols-outlined text-primary text-xl" style="">calendar_today</span>
+<p class="" style=""><span class="font-bold text-primary not-italic" style="">Punto clave:</span> Este tiempo nos permite planear y diseñar cada detalle de tu decoración con la calma que merece para que el resultado sea impecable.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item border-b border-outline-variant/30">
+<button class="flex justify-between items-center w-full py-6 text-left group" onclick="this.parentElement.classList.toggle('active')" style="">
+<span class="text-xl font-serif text-on-surface group-hover:text-primary transition-colors" style="">¿Los globos durarán todo mi evento?</span>
+<span class="material-symbols-outlined accordion-icon transition-transform duration-300 text-primary" style="">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="pb-8 text-on-surface-variant leading-relaxed">
+<p class="mb-4" style=""><span class="font-bold text-on-surface" style="">Resumen:</span> Sí, utilizamos materiales de alta calidad que garantizan una duración de más de un día en buenas condiciones.</p>
+<div class="flex flex-col gap-3 bg-surface-container-low p-4 rounded-lg">
+<div class="flex items-center gap-2 text-primary font-bold uppercase tracking-wider text-xs">
+<span class="material-symbols-outlined text-sm" style="">info</span>
+<span class="" style="">Tips de cuidado</span>
+</div>
+<p class="italic text-sm" style="">Para asegurar su durabilidad, evita el sol directo, el agua y el manejo brusco de la estructura.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="py-24 px-8 md:px-20">
+<div class="bg-rose-900 rounded-xl p-16 md:p-24 text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+<div class="absolute -top-24 -left-24 w-64 h-64 bg-primary rounded-full blur-[100px] opacity-30"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary-fixed rounded-full blur-[120px] opacity-20"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="text-4xl md:text-6xl font-serif text-white leading-tight mb-8" style="">
+                        Hagamos algo <span class="italic text-primary-fixed" style="">mágico</span> juntos
+                    </h2>
+<p class="text-primary-container text-xl mb-12 opacity-90" style="">
+                        Cada espacio es un lienzo en blanco esperando ser transformado. ¿Estás listo para elevar tu próximo evento?
+                    </p>
+<button class="bg-primary-fixed text-on-primary-fixed px-12 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all shadow-2xl" style="">
+                        Contáctanos
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-50 dark:bg-stone-950 w-full py-12 px-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-full mx-auto">
+<div class="font-serif text-lg text-stone-900 dark:text-stone-100" style="">DECORA</div>
+<div class="flex gap-8">
+<a class="font-sans uppercase tracking-widest text-xs text-stone-500 hover:text-rose-600 transition-colors" href="#" style="">Facebook</a>
+<a class="font-sans uppercase tracking-widest text-xs text-stone-500 hover:text-rose-600 transition-colors" href="#" style="">Instagram</a>
+<a class="font-sans uppercase tracking-widest text-xs text-stone-500 hover:text-rose-600 transition-colors" href="#" style="">Pinterest</a>
+<a class="font-sans uppercase tracking-widest text-xs text-stone-500 hover:text-rose-600 transition-colors" href="#" style="">Contact</a>
+</div>
+<div class="font-sans uppercase tracking-widest text-xs text-stone-500" style="">
+                © 2024 DECORA. All rights reserved. Ethereal Balloon Artistry.
+            </div>
+</div>
+</footer>
+</body></html>

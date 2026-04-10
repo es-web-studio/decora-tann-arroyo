@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-on-surface bg-surface;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .glass-nav {
+    background: rgba(248, 246, 242, 0.7);
+    backdrop-filter: blur(20px);
+  }
+  
+  .editorial-shadow {
+    box-shadow: 0px 20px 40px rgba(46, 47, 45, 0.06);
+  }
+  
+  .floating-bubble {
+    filter: blur(60px);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .label-md {
+    @apply text-sm uppercase tracking-widest font-bold;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

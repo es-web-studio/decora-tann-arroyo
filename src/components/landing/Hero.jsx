@@ -10,7 +10,8 @@ export default function Hero() {
         <img 
           alt="Decoración orgánica y sofisticada con globos para eventos formales en Cuernavaca" 
           className="w-full h-full object-cover grayscale-[0.2] contrast-[1.1]" 
-          src="/images/image-1.jpg" 
+          src="/images/image-1.webp" 
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
       </div>

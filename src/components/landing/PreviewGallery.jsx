@@ -26,12 +26,13 @@ export default function PreviewGallery() {
             <img 
               alt="Impresionante decoración para eventos con números gigantes luminosos y diseño elegante con globos" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-              src="/images/IMG_8697_clean.png" 
+              src="/images/IMG_8697.JPG" 
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 text-white">
               <p className="label-md opacity-90 mb-2 drop-shadow-md">Evento Decora</p>
-              <h4 className="text-3xl md:text-4xl font-serif drop-shadow-md">Elegancia Vibrante</h4>
+              <h3 className="text-3xl md:text-4xl font-serif drop-shadow-md">Elegancia Vibrante</h3>
             </div>
           </FadeIn>
           
@@ -43,10 +44,11 @@ export default function PreviewGallery() {
                 alt="Set temático vibrante con globos estructurados para celebraciones únicas hechas por DECORA" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                 src="/images/IMG_8691.JPG" 
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               <div className="absolute bottom-6 left-6 md:bottom-8 md:left-8 text-white">
-                <h4 className="text-xl md:text-2xl font-serif drop-shadow-md">Sets Temáticos</h4>
+                <h3 className="text-xl md:text-2xl font-serif drop-shadow-md">Sets Temáticos</h3>
               </div>
             </FadeIn>
             
@@ -57,10 +59,11 @@ export default function PreviewGallery() {
                   alt="Spot creativo fotográfico con arco de globos colores pastel para retratos en eventos" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                   src="/images/IMG_8686.JPG" 
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 md:bottom-6 md:left-6 text-white w-full pr-4">
-                  <h4 className="text-xl md:text-xl font-serif leading-tight drop-shadow-md">Spots<br/>Creativos</h4>
+                  <h3 className="text-xl md:text-xl font-serif leading-tight drop-shadow-md">Spots<br/>Creativos</h3>
                 </div>
               </FadeIn>
               
@@ -69,10 +72,11 @@ export default function PreviewGallery() {
                   alt="Hermoso detalle decorativo para eventos formales y elegantes por Tann Arroyo" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                   src="/images/IMG_8687.JPG" 
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 md:bottom-6 md:left-6 text-white w-full pr-4">
-                  <h4 className="text-xl md:text-xl font-serif leading-tight drop-shadow-md">Detalles<br/>Inolvidables</h4>
+                  <h3 className="text-xl md:text-xl font-serif leading-tight drop-shadow-md">Detalles<br/>Inolvidables</h3>
                 </div>
               </FadeIn>
             </div>

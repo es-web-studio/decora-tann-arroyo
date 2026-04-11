@@ -32,6 +32,7 @@ export default function About() {
               alt="Tann Arroyo, decoradora experta y fundadora de DECORA en Cuernavaca" 
               className="w-full h-full object-cover" 
               src="/images/us-photo-1.JPG" 
+              loading="lazy"
             />
           </div>
           <div className="absolute -bottom-6 -left-6 bg-primary text-on-primary px-8 py-5 rounded-[2rem] z-20 hidden md:block editorial-shadow">

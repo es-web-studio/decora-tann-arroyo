@@ -105,7 +105,11 @@ export default function Navbar() {
             Cotizar
           </a>
           {/* Mobile menu button */}
-          <button className="md:hidden text-primary" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          <button 
+            className="md:hidden text-primary" 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú de navegación"}
+          >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>

@@ -59,7 +59,7 @@ export default function MasonryGrid() {
                 <ZoomIn className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100" size={32} />
               </div>
               <div className="absolute bottom-0 w-full p-6 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h4 className="text-white font-serif text-xl">{img.title}</h4>
+                <h2 className="text-white font-serif text-xl">{img.title}</h2>
               </div>
             </div>
           </FadeIn>
@@ -75,6 +75,7 @@ export default function MasonryGrid() {
           <button 
             className="absolute top-6 right-6 text-white hover:text-rose-400 transition-colors"
             onClick={() => setSelectedImg(null)}
+            aria-label="Cerrar vista de imagen"
           >
             <X size={40} />
           </button>

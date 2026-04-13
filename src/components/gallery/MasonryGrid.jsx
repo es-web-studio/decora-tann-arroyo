@@ -69,27 +69,31 @@ export default function MasonryGrid() {
       {/* Lightbox Modal */}
       {selectedImg && (
         <div 
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 md:p-10"
           onClick={() => setSelectedImg(null)}
         >
-          <button 
-            className="absolute top-6 right-6 text-white hover:text-rose-400 transition-colors"
-            onClick={() => setSelectedImg(null)}
-            aria-label="Cerrar vista de imagen"
-          >
-            <X size={40} />
-          </button>
+          {/* Close Button - Moved after and with higher z-index */}
           <div 
-            className="relative max-w-5xl max-h-[90vh] rounded-xl overflow-hidden"
+            className="relative w-full max-w-5xl max-h-[90vh] flex items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <img 
-              src={selectedImg.src} 
-              alt={`Detalle fotográfico de montaje de globos: ${selectedImg.title} - DECORA`} 
-              className="w-full h-full object-contain max-h-[90vh]"
-            />
-            <div className="absolute bottom-0 w-full p-8 bg-gradient-to-t from-black/80 to-transparent">
-              <h3 className="text-white font-serif text-3xl">{selectedImg.title}</h3>
+            <button 
+              className="absolute -top-12 right-0 md:-top-4 md:-right-12 text-white/80 hover:text-white transition-colors p-2 z-[110]"
+              onClick={() => setSelectedImg(null)}
+              aria-label="Cerrar vista de imagen"
+            >
+              <X size={36} className="drop-shadow-lg" />
+            </button>
+            <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+              <img 
+                src={selectedImg.src} 
+                alt={`Detalle fotográfico de montaje de globos: ${selectedImg.title} - DECORA`} 
+                className="w-full h-full object-contain max-h-[80vh] md:max-h-[85vh]"
+              />
+              <div className="absolute bottom-0 w-full p-6 md:p-10 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+                <h3 className="text-white font-serif text-2xl md:text-4xl">{selectedImg.title}</h3>
+                <p className="text-white/60 text-sm mt-2 font-body hidden md:block">Haz clic fuera para cerrar</p>
+              </div>
             </div>
           </div>
         </div>
